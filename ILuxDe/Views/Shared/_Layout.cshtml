@@ -1,0 +1,34 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	@{await Html.RenderPartialAsync("MetatagsPartial");}
+	@{await Html.RenderPartialAsync("CssPartial");}
+	</head>
+	<body>
+		<div id="page-wrapper">
+			@{await Html.RenderPartialAsync("HeaderPartial");}
+			<div id="main">
+				<div class="container">
+					<div class="row">
+						@RenderBody();
+						<div class="col-12 ">
+						      <!-- Portfolio -->
+						
+						</div>
+						<div class="col-12">
+
+							<!-- Blog -->
+							
+                        </div>
+
+					</div>
+					
+					@{await Html.RenderPartialAsync("SidebarPartial");}
+				</div>
+			</div>
+
+			@{await Html.RenderPartialAsync("FooterPartial");}
+		</div>
+		@{await Html.RenderPartialAsync("ScriptsPartial");}
+	</body>
+	</html>
